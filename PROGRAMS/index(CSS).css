@@ -1,0 +1,693 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.toplogo{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 500px;
+    flex-wrap: wrap;
+}
+ .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(19, 25, 33);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    min-width: 500px;
+}
+.bottomnav {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(35, 47, 62);
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.nav-container {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+/*.............Logo's.............*/
+
+.logos{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.amazon{
+    margin:5px 0px 0px 5px;
+    border: 1px transparent solid;
+}
+.amazon:hover{
+    border: 1px white solid;
+}
+
+
+.location{
+    margin:5px 0px 0px 5px;
+    height: 50px;
+    border: 1px transparent solid;
+}
+.location:hover{
+    border: 1px white solid;
+}
+
+
+
+/*................search bar..............*/
+
+.searchbar {
+    display: flex;
+    width: 600px;
+    border: 4px transparent solid;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}  
+.searchbar:has(input:focus){
+    border: 4px solid rgb(255, 145, 0); 
+}
+
+
+.categories{
+    height: 36px;
+    width:50px; 
+    background-color: rgb(230, 230, 230);   
+    color: gray;
+    box-sizing: content-box;
+    font-size: 15px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: 4px transparent solid;
+    cursor: pointer;
+}
+.categories:hover{
+    background-color: lightgray;
+}
+.categories option {
+    background-color: white;   
+    color: black;
+    font-size: 15px;              
+}
+.categories:focus{
+    border: 4px solid rgb(255, 145, 0);
+}
+
+
+.search{
+    height: 44px;
+    width:600px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 4px transparent solid;
+}
+
+.searchbar button{
+    height: 44px;
+    width: 47px;
+    border:1px solid transparent;
+    border-bottom-right-radius: 6px; 
+    border-top-right-radius: 6px;
+}
+.searchicon img{
+    height:42px;
+    cursor: pointer;
+    border-bottom-right-radius: 6px; 
+    border-top-right-radius: 6px;       
+}
+.searchicon:not(:hover) {
+    filter: contrast(100%) brightness(100%) saturate(70%);
+}
+.searchicon a:focus img{
+    border: 4px solid rgb(255, 145, 0);
+    scale: 1.2;
+}
+
+
+
+/*................language..............*/
+
+.langnav{
+    border: 1px solid transparent;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.langnav:hover{
+    border: 1px solid white;
+}
+
+
+.flag{
+    margin-left: 10px;
+    height:20px;
+}
+.lang{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.lang option{
+    color:black;
+    font-size: 12px;
+}
+
+
+/*..................profile..................*/
+
+.profile-dropdown {
+    position: relative;
+}
+.profile {
+    height: 50px;
+    width: 130px;
+    color: white;
+    font-size: 15px;
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.dropdown-menu {
+    position: absolute;
+    right: 0%;
+    width: 500px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: none;
+    border-radius: 4px;
+}
+.profile-dropdown:hover .dropdown-menu {
+    display: block;
+}
+.sign-in-link {
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.sign-in-link:hover {
+    background-color: orange;
+}
+.new-user {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.new-user a {
+    color: blue;
+    text-decoration: none;
+}
+.new-user a:hover {
+    text-decoration: underline;
+}
+.dropdown-columns {
+    display: flex;
+    gap: 40px;
+}
+.column {
+    flex: 1;
+}
+.column p {
+    font-size: 13px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+.column p:hover {
+    text-decoration: underline;
+    color: red;
+}
+.column a {
+    font-size: 13px;
+    margin: 6px 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.column a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+/*.............Orders......................*/
+
+.orders{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    color: white;   
+    cursor: pointer; 
+}
+.orders:hover{
+    border: 1px solid white;
+}
+.orders a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+
+/*..............cart...................*/
+
+.cart{
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.cart:hover{
+    border: 1px solid white;
+}
+
+
+
+/*.........bottom nav anchor.............*/
+
+.allbnav{
+    border: 1px solid transparent;
+}
+.allbnav a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    cursor: pointer;
+    margin-right: 15px;
+    white-space: nowrap; 
+}
+.allbnav a,
+.bnavoptions a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.allbnav img{
+    padding-right: 10px;
+}
+.allbnav:hover{
+    border: 1px solid white;
+}
+
+
+.bnavoptions{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.bnavoptions a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: 1px solid transparent;
+    padding: 10px 10px 10px 5px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.bnavoptions a:hover{
+    border: 1px solid white;
+}
+
+
+
+/*................body............*/
+.bg{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, white 100%),url("../IMAGES/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 1200px;
+}
+
+
+
+/*..................grid.................*/
+
+.grid-container {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    flex-wrap: nowrap;
+    min-width: 1300px;
+    width: 100%;
+}
+
+.grid1,.grid3,.grid4 {
+    height: 400px;
+    width: 290px;
+    background-color: white;
+    color: black;
+    padding: 20px 10px 10px 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items : start;
+    flex-wrap: wrap;
+    margin-left: 20px;   
+}
+
+.grid1 img,.grid3 img,.grid4 img{
+    height: 100px;
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.grid2 {
+    height: 400px;
+    width: 290px;
+    background-color: white;
+    color: black;
+    padding: 20px 10px 10px 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items : start;
+    flex-wrap: wrap;
+    
+}
+
+.grid2 img{
+    height: 300px;
+    width: 270px;
+    cursor: pointer;
+    
+}
+.item a{
+    text-decoration: none;
+    display: block;
+}
+.item a{
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.item a:hover{
+    color: blue;
+}
+
+.image{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 1300px;  
+}
+
+
+/*.........footer.................*/
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  min-width: 1200px;
+}
+
+.footcont {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footcont b {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signin a {
+  text-decoration: none;
+  background-color: yellow; 
+  color: black;
+  padding: 8px 50px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.signin a:hover {
+  background-color: rgb(235, 219, 6); 
+}
+
+.footcont p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footcont p a {
+  color: blue;
+}
+
+.footcont p a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*.............back to top............................*/
+
+.back2top {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(43, 53, 66);
+    height: 50px;
+    color: white;    
+    width: 100%;
+    min-width: 1200px;
+}
+.back2top a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.back2top:hover {
+    background-color: lightslategray;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*............footer..........................*/
+
+.detailsbot {
+    background-color: rgb(30, 43, 59);
+    color: white;
+    padding: 40px 60px 20px;
+    font-size: 14px;
+    min-width: 1200px;
+}
+.footer-columns {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(30, 43, 59) ;
+}
+.footer-col {
+    min-width: 250px;
+    white-space: nowrap;                  
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-col a{
+    margin: 8px 0;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+.footer-col a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.mnav{
+    display: none;
+}
+.bg1{
+    display: none;
+}
+.uparr{
+    display: none;
+}
+
+@media(max-width:600px){
+    .topnav{
+        margin-top: 50px;
+        background-color: rgb(19, 25, 33);
+        min-width: 350px;
+    }
+    .logos,.langnav,.profile-dropdown,.cart,.orders,.image{
+        display: none;
+    }
+   .searchbar{
+        width: 100%;
+        border: 2px orangered solid;
+        margin-left: 5px;
+        position: fixed;
+        z-index: 1;
+        margin-top: 5px;
+        min-width: 350px;
+    }
+    .search{
+        font-size: 15px;
+    }
+    .toplogo{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        min-width: 350px;
+        justify-content: center;        
+        z-index: 1;
+        background-color: rgb(19, 25, 33);
+    }
+    .bottomnav{
+        display: none;
+    }
+    .bg1{
+        display: block;
+    }
+
+    .bg1 img{
+       height: 300px;
+       width: 100%;
+       margin-top: 90px;
+       min-width: 350px;
+    }
+    .bg{
+        display: none;
+    }
+    .grid-container{
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 320px;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid1,.grid2,.grid3,.grid4{
+        max-width: 600px;
+        min-width: 350px;    
+    }
+    .grid2{
+        justify-content: center;
+    }
+    .footer{
+        align-items: center;
+        min-width: 320px;
+    }
+    .back2top{
+       display: none;
+    }
+    .detailsbot{
+        align-items: center;
+        min-width: 320px;
+    }
+    .footer-columns{
+        flex-wrap: wrap;
+    }
+    .footer-col{
+        margin-top: 30px;
+    }
+  
+    .mnav{
+        display: flex;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        transform: translate(0px,585px);
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        z-index: 1;
+        min-width: 320px;
+    }
+    .mnav img{
+        height: 55px;
+        width: auto;
+    }  
+    .mnav img:hover{
+        background-color: green;
+    } 
+    .mnav img:active{
+        background-color: greenyellow;
+    } 
+    .uparr{
+        display: block;
+        position: fixed;
+        width: 100%;
+        transform: translate(80%,490px);
+    }
+     .uparr img{
+        height: 50px;
+        width: 50px; 
+        border-radius: 100px;       
+    }
+
+}
+

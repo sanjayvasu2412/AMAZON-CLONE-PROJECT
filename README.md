@@ -1,16 +1,17 @@
  Sanjay Tutorial - Amazon Clone Project
 
 Welcome to the Sanjay Tutorial Amazon Website Clone! 🛒  
-This project is a **front-end clone** of the Amazon India homepage and related pages using only **HTML** and **CSS**.
+This project is a front-end clone of the Amazon India homepage and related pages using only HTML and CSS.
 
 
 
-#📁 Project Overview
+📁 Project Overview
 
       This clone mimics the layout and visual style of Amazon.in.
       It was created for practice and learning purposes, focusing on responsiveness, grid layouts, and UI consistency.
 
  📂 Project Folder Structure
+ 
     📁 program/
         * 📄 index.html → Amazon Home Page
         * 📄 signin.html → Amazon Sign-In Page
@@ -61,4 +62,4 @@ This project is a **front-end clone** of the Amazon India homepage and related p
     ✅ Fork and improve it your own way!
 
 
-****This project is for learning purposes only. Not affiliated with Amazon.***
+This project is for learning purposes only. Not affiliated with Amazon.

@@ -61,4 +61,4 @@ This project is a **front-end clone** of the Amazon India homepage and related p
     ✅ Fork and improve it your own way!
 
 
-*************************************This project is for learning purposes only. Not affiliated with Amazon.***************************************************
+****This project is for learning purposes only. Not affiliated with Amazon.***

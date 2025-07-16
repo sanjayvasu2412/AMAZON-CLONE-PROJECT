@@ -7,7 +7,8 @@ This project is a **front-end clone** of the Amazon India homepage and related p
 
 #📁 Project Overview
 
-      This clone mimics the layout and visual style of Amazon.in. It was created for practice and learning purposes, focusing on responsiveness, grid layouts, and UI consistency.
+      This clone mimics the layout and visual style of Amazon.in.
+      It was created for practice and learning purposes, focusing on responsiveness, grid layouts, and UI consistency.
 
  📂 Project Folder Structure
     📁 program/

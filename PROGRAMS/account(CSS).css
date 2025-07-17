@@ -494,7 +494,7 @@
         height: 60px;
         width: 100%;
         position: fixed;
-        transform: translate(0px,590px);
+        bottom: 0;
         justify-content: space-around;
         align-items: center;
         background-color: white;
@@ -502,15 +502,15 @@
         min-width: 320px;
     }
     .mnav img{
-        height: 55px;
+        height: 45px;
         width: auto;
     }  
     .mnav img:hover{
-        background-color: green;
+        filter: drop-shadow(4px 4px 4px orangered);
     } 
-    .mnav img:active{
-        background-color: greenyellow;
-    } 
+   .acc{
+    border-top: 5px solid red;
+   }
 }
 
 

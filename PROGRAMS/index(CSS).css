@@ -660,7 +660,7 @@
         height: 60px;
         width: 100%;
         position: fixed;
-        transform: translate(0px,585px);
+        bottom: 0;
         justify-content: space-around;
         align-items: center;
         background-color: white;
@@ -668,14 +668,11 @@
         min-width: 320px;
     }
     .mnav img{
-        height: 55px;
+        height: 45px;
         width: auto;
     }  
     .mnav img:hover{
-        background-color: green;
-    } 
-    .mnav img:active{
-        background-color: greenyellow;
+        filter: drop-shadow(4px 4px 4px orangered);
     } 
     .uparr{
         display: block;
@@ -687,6 +684,9 @@
         height: 50px;
         width: 50px; 
         border-radius: 100px;       
+    }
+    .home{
+        border-top: 5px solid red;
     }
 
 }

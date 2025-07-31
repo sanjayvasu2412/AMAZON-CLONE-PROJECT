@@ -121,10 +121,11 @@
 
 .search{
     height: 44px;
-    width:600px;
+    width:100%;
     font-size: 20px;
     padding-left: 10px;
     border: 4px transparent solid;
+    min-width: 280px;
 }
 
 .searchbar button{
@@ -138,9 +139,8 @@
     height:42px;
     cursor: pointer;
     border-bottom-right-radius: 6px; 
-    border-top-right-radius: 6px;
-    transform: translate(-15px,-8px);   
-        
+    border-top-right-radius: 6px; 
+    transform: translate(-15px,-9px);      
 }
 .searchicon:not(:hover) {
     filter: contrast(100%) brightness(100%) saturate(70%);
